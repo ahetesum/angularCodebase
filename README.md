@@ -4,7 +4,7 @@ A best way to start writing proper product development
 I have created this project as a best practice Sample for Angular. So anyone can easilty quick up the project.
 Containes the beast way to write a project in Angular as per modern aproch of development
 
-##Things You Can Learn
+## Things You Can Learn
 
 1. Modularizing the Project
 2. Writing Code According to Use Case
