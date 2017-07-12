@@ -1,6 +1,16 @@
 # TypeScript Angular Project Codebase
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+A best way to start writing proper product development
+I have created this project as a best practice Sample for Angular. So anyone can easilty quick up the project.
+Containes the beast way to write a project in Angular as per modern aproch of development
+
+##Things You Can Learn
+
+1. Modularizing the Project
+2. Writing Code According to Use Case
+3. Opened for add New module or removing module simply
+
+ 
 
 ## Development server
 
