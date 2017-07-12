@@ -1,0 +1,62 @@
+
+  <div class="block-center mt-xl wd-xl">
+    <!-- START panel-->
+    <div class="panel panel-dark panel-flat">
+      <div class="panel-heading text-center">
+        <a href="#">
+          <img src="/src/assets/img/logo.png" alt="Image" class="block-center img-rounded">
+        </a>
+      </div>
+      <div class="panel-body">
+        <p class="text-center pv">SIGN IN TO CONTINUE.</p>
+        <form role="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate data-parsley-validate=""  class="mb-lg">
+          <div class="form-group has-feedback">
+            <input  type="text" placeholder="Enter Username" autocomplete="off" name="loginName" [(ngModel)]="model.loginName" #loginName="ngModel" required  class="form-control">
+            <span class="fa fa-envelope form-control-feedback text-muted"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input id="exampleInputPassword1" type="password" placeholder="Password" name="password" [(ngModel)]="model.password" #password="ngModel" required  class="form-control">
+            <span class="fa fa-lock form-control-feedback text-muted"></span>
+          </div>
+          <div class="clearfix">
+            <div class="checkbox c-checkbox pull-left mt0">
+              <label>
+                <input type="checkbox" value="" name="remember">
+                <span class="fa fa-check"></span>Remember Me</label>
+            </div>
+            <div class="pull-right"><a href="recover.html" class="text-muted">Forgot your password?</a>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-block btn-primary mt-lg">Login</button>
+        </form>
+        <p class="pt-lg text-center">Need to Signup?</p><a href="register.html" class="btn btn-block btn-default">Register Now</a>
+      </div>
+    </div>
+    <!-- END panel-->
+    <div class="p-lg text-center">
+      <span>&copy;</span>
+      <span>{{parentCompany}}</span>
+    </div>
+  </div>
+
+
+
+<!--<div class="col-md-6 col-md-offset-3">-->
+  <!--<h2>Login</h2>-->
+  <!--<form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>-->
+    <!--<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !loginName.valid }">-->
+      <!--<label for="loginName">Username</label>-->
+      <!--<input type="text" class="form-control" name="loginName" [(ngModel)]="model.loginName" #loginName="ngModel" required />-->
+      <!--<div *ngIf="f.submitted && !loginName.valid" class="help-block">Username is required</div>-->
+    <!--</div>-->
+    <!--<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">-->
+      <!--<label for="password">Password</label>-->
+      <!--<input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />-->
+      <!--<div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>-->
+    <!--</div>-->
+    <!--<div class="form-group">-->
+      <!--<button [disabled]="loading" class="btn btn-primary">Login</button>-->
+      <!--<img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />-->
+    <!--</div>-->
+  <!--</form>-->
+<!--</div>-->

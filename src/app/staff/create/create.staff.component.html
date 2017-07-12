@@ -1,0 +1,47 @@
+
+<div class="row">
+  <div class="col-lg-offset-2 col-lg-8">
+  <!-- START panel-->
+  <div class="panel panel-default">
+    <div class="panel-heading">Staff Create</div>
+    <div class="panel-body">
+      <form role="form" (ngSubmit)="f.form.valid && createStaff()" #f="ngForm" novalidate data-parsley-validate=""  class="mb-lg">
+        <div class="form-group">
+          <label>First Name English</label>
+          <input type="text" placeholder="Enter Name" class="form-control">
+        </div>
+      <div class="form-group">
+        <label>Middle Name English</label>
+        <input type="text" placeholder="Enter Middle Name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Last Name English</label>
+        <input type="text" placeholder="Enter Last Name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>First Name Farshi</label>
+        <input type="text" placeholder="Enter Name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Middle Name Farshi</label>
+        <input type="text" placeholder="Enter Middle Name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Last Name Farshi</label>
+        <input type="text" placeholder="Enter Last Name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter Phone" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter Mobile" class="form-control">
+      </div>
+        <button type="submit" class="btn btn-sm btn-success">Submit</button>
+      </form>
+    </div>
+  </div>
+  <!-- END panel-->
+  </div>
+</div>
